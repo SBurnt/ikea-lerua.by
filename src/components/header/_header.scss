@@ -1,0 +1,38 @@
+@import 'header-top/header-top';
+@import 'header-nav/header-nav';
+
+.header {
+	display: flex;
+
+	background-color: $bg-header;
+
+	@media only screen and (max-width: 1024px) {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 11;
+
+		+ * {
+			margin-top: 59px;
+		}
+	}
+
+	@media only screen and (min-width: 1025px) {
+		display: block;
+	}
+
+	&__wrap {
+		position: relative;
+
+		padding-left: 0;
+
+		@media only screen and (max-width: 1024px) {
+			position: static;
+		}
+
+		@media only screen and (min-width: 1025px) {
+			padding-left: 112px;
+		}
+	}
+}

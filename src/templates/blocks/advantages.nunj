@@ -1,0 +1,8 @@
+<section class="advantages">
+	<div class="container">
+		<div class="section__inner">
+			<h2 class="section__title">Основной контент</h2>
+			<img class="advantages__img lazyload" data-src="assets/images/main/advantages/advantages-01.png" loading="lazy" alt="Высокая жаростойкость">
+		</div>
+	</div>
+</section>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		{# <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> #}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			{% block title %}SBurnt{% endblock %}
+		</title>
+		{# favicon-generator.org #}
+		<meta name="author" content="SBurnt, Siarhei Pashkevich"/>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="assets/css/styles.css?hash"/>
+		{% endblock stylesheets %}
+	</head>
+	<body>
+		<div class="wrapper">
+			{% include '../../components/header/header.nunj' %}
+
+			{% block content %}{% endblock content %}
+
+			{% include '../../components/footer/footer.nunj' %}
+			{% include '../blocks/modals.nunj' %}
+		</div>
+		{% block scripts %}
+			<script src="assets/js/bundle.js?hash"></script>
+		{% endblock scripts %}
+	</body>
+</html>
