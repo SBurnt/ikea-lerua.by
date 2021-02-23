@@ -1,207 +1,55 @@
-.header__nav {
-  display: none;
+.nav {
+	&__item {
+		display: inline-block;
 
-  @media only screen and (max-width: 1024px) {
-    position: absolute;
-    top: 59px;
-    left: -270px;
-    z-index: 20;
+		cursor: pointer;
 
-    display: block;
-    min-width: 265px;
-    padding: 25px;
+		.ico-make-order {
+			margin-right: 13px;
+		}
+	}
 
-    background: $bg-header;
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
 
-    transition: left 0.5s ease;
-    &.active-mob {
-      left: 0;
-    }
-  }
+	&__link {
+		position: relative;
 
-  @media only screen and (min-width: 1024px) {
-    display: block;
-  }
+		color: $color-primary;
 
-  .nav {
-    &__items {
-      display: flex;
-      justify-content: space-between;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 20px;
 
-      @media only screen and (max-width: 1024px) {
-        flex-direction: column;
-      }
-    }
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
 
-    &__item {
-      position: relative;
+			width: 0%;
+			height: 1px;
+			border-radius: 3px;
 
-      display: flex;
-      align-items: center;
+			background-color: $color-primary;
 
-      cursor: pointer;
+			transition: width 0.2s ease-in-out;
 
-      &:hover {
-        .bricks-ico path,
-        .price-ico rect {
-          fill: $color-red;
-        }
+			content: "";
+		}
 
-        > .nav__link {
-          color: $color-red;
+		&:hover::before {
+			width: 100%;
+		}
 
-          &.nav-arrow {
-            &::after {
-              border-color: $color-red;
+		&.make-order {
+			color: #fff;
+			font-weight: 400;
+			font-size: 14px;
 
-              transition: transform 0.4s ease-in-out;
-              @media only screen and (min-width: 1025px) {
-                transform: translateY(0) rotate(-135deg);
-              }
-            }
-          }
-        }
-
-        @media only screen and (min-width: 1025px) {
-          .submenu {
-            display: block;
-          }
-        }
-      }
-
-      .bricks-ico {
-        margin-right: 15px;
-      }
-
-      .price-ico {
-        margin-left: 15px;
-      }
-    }
-
-    &__link {
-      display: block;
-      padding: 19px 0;
-
-      font-weight: 700;
-      font-size: 16px;
-      color: $color-nav;
-
-      @media only screen and (max-width: 1024px) {
-        padding: 12px 0;
-
-        font-size: 14px;
-      }
-
-      &.nav-arrow {
-        position: relative;
-
-        padding-right: 23px;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 0;
-
-          width: 8px;
-          height: 8px;
-
-          border-right: 2px solid #757575;
-          border-bottom: 2px solid #757575;
-          transform: translateY(-50%) rotate(45deg);
-
-          transition: transform 0.1s ease-in-out;
-
-          @media only screen and (max-width: 1024px) {
-            transform: translateY(-50%) rotate(-45deg);
-          }
-        }
-      }
-    }
-  }
-
-  .submenu {
-    position: absolute;
-    top: 56px;
-    right: 0;
-    left: 0;
-    z-index: 20;
-
-    display: none;
-    width: max-content;
-    padding: 20px 40px;
-
-    background: $bg-header;
-    border-left: 2px solid $color-red;
-    border-radius: 0 0 2px 0;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.75);
-
-    @media only screen and (max-width: 1024px) {
-      width: 265px;
-      padding: 20px;
-      padding-left: 30px;
-    }
-
-    svg {
-      margin-right: 15px;
-    }
-
-    &__back {
-      display: none;
-      @media only screen and (max-width: 1024px) {
-        display: flex;
-      }
-
-      span {
-        position: relative;
-
-        padding: 12px 0;
-
-        font-size: 14px;
-        line-height: 18px;
-        color: #757575;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: -15px;
-
-          width: 8px;
-          height: 8px;
-
-          border-bottom: 2px solid #757575;
-          border-left: 2px solid #757575;
-          transform: translateY(-50%) rotate(45deg);
-
-          transition: transform 0.1s ease-in-out;
-        }
-      }
-    }
-
-    .nav__item:hover {
-      svg path {
-        fill: $color-red;
-      }
-    }
-  }
-
-  &.active-mob {
-    .nav__item {
-      position: static;
-    }
-
-    .submenu {
-      top: 0;
-      left: -270px;
-      z-index: 9999;
-
-      display: block;
-      height: 100%;
-
-      transition: left 0.5s ease;
-      &.active {
-        left: 0;
-      }
-    }
-  }
+			&:hover::before {
+				content: none;
+			}
+		}
+	}
 }

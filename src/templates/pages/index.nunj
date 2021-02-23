@@ -2,7 +2,7 @@
 
 {% block content %}
 
-	<main class="main">
+	<main class="main index-page">
 		{% include '../blocks/advantages.nunj' %}
 	</main>
 

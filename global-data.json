@@ -1,33 +1,23 @@
 {
 	"navItems": [
 		{
-			"name": "Каталог",
-			"path": "catalog.html",
-			"classActive": "active"
+			"name": "Каталог Икея",
+			"path": "https://www.ikea.com/ru/ru/",
+			"target": "_blank"
 		},
 		{
-			"name": "О компании",
-			"path": "about-company.html"
-		},
-		{
-			"name": "Галерея",
-			"path": "gallery.html"
-		},
-		{
-			"name": "Сотрудничество",
-			"path": "cooperation.html"
-		},
-		{
-			"name": "Советы",
-			"path": "advice.html"
-		},
-		{
-			"name": "Прайс",
-			"path": "assets/files/price.pdf"
+			"name": "Каталог Леруа Мерлен",
+			"path": "https://leroymerlin.ru/",
+			"target": "_blank"
 		},
 		{
 			"name": "Контакты",
 			"path": "contacts.html"
+		},
+		{
+			"name": "Сделать заказ",
+			"path": "make-order.html",
+			"classMakeOrder": "make-order"
 		}
 	]
 }

@@ -1,0 +1,40 @@
+.social {
+	&__list {
+		display: flex;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 8px;
+	}
+
+	&__link {
+		&:hover {
+			.social__ico-telegram {
+				.color {
+					fill: #fff;
+				}
+				.white {
+					fill: #06caff;
+				}
+			}
+
+			.social__ico-instagram {
+				.color {
+					fill: #fff;
+				}
+				.white {
+					fill: #f82900;
+				}
+			}
+
+			.social__ico-viber {
+				.color {
+					fill: #fff;
+				}
+				.white {
+					fill: #933fe8;
+				}
+			}
+		}
+	}
+}

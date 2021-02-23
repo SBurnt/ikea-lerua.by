@@ -1,8 +1,14 @@
 <header class="header">
 	<div class="container">
-		<div class="header__wrap">
-			{% include './header-top/header-top.nunj' %}
+		<div class="header__inner">
+			<h1 class="invisible-container">Cлужба доставки товаров IKEA №1 в Беларуси</h1>
+			{% include '../logo/logo.nunj' %}
 			{% include './header-nav/header-nav.nunj' %}
+			<div>
+				{% include '../email/email.nunj' %}
+				{% include '../phones/phones.nunj' %}
+			</div>
+			{% include '../social/social.nunj' %}
 		</div>
 	</div>
 </header>
