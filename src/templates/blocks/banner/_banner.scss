@@ -1,0 +1,18 @@
+.banner {
+	height: 415px;
+
+	background: url(../images/main/main-banner.jpg) no-repeat;
+	background-size: cover;
+	&__title {
+		width: 530px;
+		padding-top: 208px;
+
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 129.18%;
+
+		span {
+			font-weight: 800;
+		}
+	}
+}

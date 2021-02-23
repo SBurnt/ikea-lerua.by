@@ -3,7 +3,7 @@
 {% block content %}
 
 	<main class="main index-page">
-		{% include '../blocks/advantages.nunj' %}
+		{% include '../blocks/banner/banner.nunj' %}
 	</main>
 
 {% endblock content %}
