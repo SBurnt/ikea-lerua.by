@@ -20,7 +20,7 @@
 			{% block content %}{% endblock content %}
 
 			{% include '../../components/footer/footer.nunj' %}
-			{% include '../blocks/modals.nunj' %}
+			{% include '../blocks/modals/modals.nunj' %}
 		</div>
 		{% block scripts %}
 			<script src="assets/js/bundle.js?hash"></script>

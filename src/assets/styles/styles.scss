@@ -1,7 +1,7 @@
 // ======= GLOBAL =======
 @import "normalize";
 @import "reset";
-// @import "lib/swiper-bundle.min";
+@import "lib/swiper-bundle.min";
 // @import "lib/simplebar.min";
 // @import "lib/nouislider.min";
 // @import "lib/choices.min";
@@ -17,6 +17,7 @@
 @import "../../components/email/email";
 @import "../../components/phones/phones";
 @import "../../components/social/social";
+@import "../../components/slider/slider";
 @import "../../components/footer/footer";
 
 // ======= PAGES =======
@@ -24,4 +25,5 @@
 
 // ======= BLOCKS =======
 @import "../../templates/blocks/banner/banner";
-@import "blocks/modals";
+@import "../../templates/blocks/sliders/sliders";
+@import "../../templates/blocks/modals/modals";

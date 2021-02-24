@@ -4,6 +4,7 @@
 
 	<main class="main index-page">
 		{% include '../blocks/banner/banner.nunj' %}
+		{% include '../blocks/sliders/sliders.nunj' %}
 	</main>
 
 {% endblock content %}

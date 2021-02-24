@@ -1,0 +1,10 @@
+.sliders {
+	.section__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.slider {
+		width: calc(100% / 2 - 30px);
+	}
+}

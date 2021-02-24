@@ -1,0 +1,8 @@
+<section class="sliders">
+	<div class="container">
+		<div class="section__inner">
+			{% include '../../../components/slider/slider.nunj' %}
+			{% include '../../../components/slider/slider.nunj' %}
+		</div>
+	</div>
+</section>
