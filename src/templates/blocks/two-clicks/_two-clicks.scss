@@ -1,0 +1,31 @@
+.two-clicks {
+	padding: 29px 0 26px;
+
+	background-color: #5cbad0;
+	background-image: url(../images/main/two-clicks.svg);
+	background-repeat: no-repeat;
+	background-position: 65% center;
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text-top {
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 142.4%;
+		text-transform: uppercase;
+	}
+
+	&__text-bottom {
+		margin-top: 8px;
+
+		color: #ffffff;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 142.4%;
+	}
+}

@@ -33,8 +33,14 @@
 		max-width: 92px;
 	}
 
+	&__img {
+		margin-top: 12px;
+	}
+
 	&__content {
 		.title {
+			margin-bottom: 10px;
+
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 22px;
