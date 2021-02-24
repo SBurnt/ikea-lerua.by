@@ -1,0 +1,47 @@
+<section class="advantages">
+	<div class="container">
+		<div class="section__inner">
+			<div class="advantages__wrap">
+				<h3 class="advantages__title">Почему нас выбирают</h3>
+				<ul class="advantages__list">
+					<li class="advantages__item">
+						<div class="advantages__img-wrap">
+							<img class="advantages__img lazyload" data-src="assets/images/advantages/advantages-01.svg" loading="lazy" alt="бесплатно">
+						</div>
+						<div class="advantages__content">
+							<div class="title">Бесплатно</div>
+							<div class="text">Доставка по Минску производится бесплатно, если сумма заказа превышает 150 BYN. Доставка по Беларуси 20-70 BYN (цена зависит от объёма заказа)</div>
+						</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__img-wrap">
+							<img class="advantages__img lazyload" data-src="assets/images/advantages/advantages-02.svg" loading="lazy" alt="Без предоплат">
+						</div>
+						<div class="advantages__content">
+							<div class="title">Без предоплат</div>
+							<div class="text">Выполнение всех заказов без предоплаты. Оплата производится по факту получения</div>
+						</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__img-wrap">
+							<img class="advantages__img lazyload" data-src="assets/images/advantages/advantages-03.svg" loading="lazy" alt="До двери">
+						</div>
+						<div class="advantages__content">
+							<div class="title">До двери</div>
+							<div class="text">Доставим любой выбранный Вами товар в целости прямо до двери подъезда</div>
+						</div>
+					</li>
+					<li class="advantages__item">
+						<div class="advantages__img-wrap">
+							<img class="advantages__img lazyload" data-src="assets/images/advantages/advantages-04.svg" loading="lazy" alt="100% гарантия">
+						</div>
+						<div class="advantages__content">
+							<div class="title">100% гарантия</div>
+							<div class="text">Гарантия возврата любого купленного Вами товара в течении 60 суток с момента покупки</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

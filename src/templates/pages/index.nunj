@@ -6,6 +6,7 @@
 		{% include '../blocks/banner/banner.nunj' %}
 		{% include '../blocks/sliders/sliders.nunj' %}
 		{% include '../blocks/commission/commission.nunj' %}
+		{% include '../blocks/advantages/advantages.nunj' %}
 	</main>
 
 {% endblock content %}
