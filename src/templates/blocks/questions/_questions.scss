@@ -1,0 +1,33 @@
+.questions {
+	&__wrap {
+		background: url(../images/main/bg-question.png) no-repeat;
+		background-position: top right;
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+
+		text-transform: uppercase;
+
+		span {
+			margin-right: 17px;
+
+			color: #f6a623;
+			font-weight: bold;
+			font-size: 35px;
+			line-height: 43px;
+			text-transform: uppercase;
+		}
+	}
+
+	.accordion {
+		width: 100%;
+		max-width: 723px;
+	}
+}

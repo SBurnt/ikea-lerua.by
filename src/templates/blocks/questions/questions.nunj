@@ -1,0 +1,11 @@
+<section class="questions">
+	<div class="container">
+		<div class="section__inner">
+			<div class="questions__wrap">
+				<h3 class="questions__title">
+					<span>?</span> Часто задаваемые вопросы</h3>
+				{% include '../../../components/accordion/accordion.nunj' %}
+			</div>
+		</div>
+	</div>
+</section>

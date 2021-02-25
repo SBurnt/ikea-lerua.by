@@ -3,6 +3,7 @@ import 'core-js/stable';
 import './lazyload';
 import './modals';
 import './swiper';
+import './accordion';
 
 if (module.hot) {
 	module.hot.accept();

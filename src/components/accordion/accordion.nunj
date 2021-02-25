@@ -1,0 +1,47 @@
+<div class="accordion">
+	<div class="accordion__item">
+		<button class="accordion__question">Есть ограничения по весу?
+			<svg class="ico-arrow-accordion" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#ffffff" stroke="#EAEAEA"/>
+				<path d="M11 13L15 17L19 13" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="accordion__answer">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nemo expedita inventore quidem labore accusantium?</p>
+		</div>
+	</div>
+	<div class="accordion__item">
+		<button class="accordion__question">По каким дням осуществляется доставка?
+			<svg class="ico-arrow-accordion" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#ffffff" stroke="#EAEAEA"/>
+				<path d="M11 13L15 17L19 13" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="accordion__answer">
+			<p>Доставка осуществляется каждую неделю в субботу и воскресенье. В редких случаях товар может быть доставлен в будние дни, по желанию клиента. Информация о ближайшей доставке всегда доступна заранее на сайте.</p>
+			<p>Вы можете выбрать любой удобный для вас способ и указать желаемую дату доставки. Оплата рассчитывается автоматически при указании региона и даты. Для более точного расчета стоимости доставки обращайтесь к менеджерам.</p>
+		</div>
+	</div>
+	<div class="accordion__item">
+		<button class="accordion__question">Как оформить заказ?
+			<svg class="ico-arrow-accordion" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#ffffff" stroke="#EAEAEA"/>
+				<path d="M11 13L15 17L19 13" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="accordion__answer">
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+	</div>
+	<div class="accordion__item">
+		<button class="accordion__question">Предусмотрена ли скидочная система постоянным клиентам?
+			<svg class="ico-arrow-accordion" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.5" y="0.5" width="29" height="29" rx="14.5" fill="#ffffff" stroke="#EAEAEA"/>
+				<path d="M11 13L15 17L19 13" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="accordion__answer">
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolorem magni impedit neque necessitatibus minus cupiditate, fugiat tempora officia dolorum.</p>
+		</div>
+	</div>
+</div>

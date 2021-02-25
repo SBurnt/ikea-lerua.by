@@ -8,6 +8,7 @@
 		{% include '../blocks/commission/commission.nunj' %}
 		{% include '../blocks/advantages/advantages.nunj' %}
 		{% include '../blocks/two-clicks/two-clicks.nunj' %}
+		{% include '../blocks/questions/questions.nunj' %}
 	</main>
 
 {% endblock content %}
