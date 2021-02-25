@@ -4,6 +4,7 @@ import './lazyload';
 import './modals';
 import './swiper';
 import './accordion';
+import './header';
 
 if (module.hot) {
 	module.hot.accept();

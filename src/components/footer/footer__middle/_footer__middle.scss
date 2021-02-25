@@ -30,8 +30,8 @@
 		}
 
 		&__link {
-			font-weight: 700;
-			font-size: 14px;
+			font-size: 12px;
+			line-height: 16px;
 
 			@include media("max", "md") {
 				font-size: 13px;

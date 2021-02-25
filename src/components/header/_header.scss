@@ -10,4 +10,68 @@
 		padding: 18px 0 12px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	}
+
+	&.transform {
+		transform: translateY(-41px);
+
+		transition: transform 0.6s ease-out;
+	}
+
+	&.scroll {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+
+		background: $bg-gray;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+		transform: translateY(0);
+
+		.header__inner {
+			padding: 6px 0;
+		}
+
+		.logo__wrap {
+			margin-right: 42px;
+		}
+
+		.logo__img {
+			width: auto;
+			height: 28px;
+		}
+
+		.header__nav {
+			margin-right: auto;
+		}
+
+		.nav__link {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.make-order {
+			order: 1;
+			padding: 7px 14px 5px;
+
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		.ico-make-order {
+			width: 13px;
+			height: 11px;
+			margin-right: 10px;
+		}
+
+		.email {
+			display: none;
+		}
+
+		.phones {
+			margin: 0 40px 0 auto;
+		}
+
+		.social {
+			display: none;
+		}
+	}
 }
