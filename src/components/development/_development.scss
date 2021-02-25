@@ -1,0 +1,24 @@
+.development {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		.development__text {
+			color: #0188ad;
+		}
+
+		.development__ico path {
+			fill: #0188ad;
+		}
+	}
+
+	&__text {
+		color: #999999;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__ico {
+		margin-left: 8px;
+	}
+}

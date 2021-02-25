@@ -1,0 +1,10 @@
+.social-black {
+	margin-bottom: 9px;
+	.social__list {
+		justify-content: center;
+	}
+
+	.social__item:not(:last-child) {
+		margin-right: 25px;
+	}
+}

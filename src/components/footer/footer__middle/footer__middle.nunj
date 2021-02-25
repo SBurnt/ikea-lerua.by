@@ -1,18 +1,25 @@
-<div class="footer__wrap">
-	<div class="container">
-		<div class="footer__middle">
-			<div class="footer__nav">
-				<ul class="nav__items">
-					{% for item in navItems %}
-						<li class="nav__item{% if item.classActive == "active" %} active{% endif %} ">
-							<a href="{{ item.path }}" class="nav__link">{{ item.name }}</a>
-						</li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="footer__address">
-				220020, Минск,<br> пр. Победителей, 100, оф. 200.
-			</div>
+<div class="container">
+	<div class="footer__middle">
+		{% include '../../logo/logo.nunj' %}
+		<p class="footer__desc">На нашем сайте Вы без труда можете заказать любые товары IKEA за наличный или безналичный расчет.</p>
+		<div class="footer__nav">
+			<ul class="nav__items">
+				{% for item in navItems %}
+					<li class="nav__item{% if item.classMakeOrder == "make-order" %} make-order{% endif %}">
+						<a href="{{ item.path }}" class="nav__link">{{ item.name }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div>
+			{% include '../../social-black/social-black.nunj' %}
+			{% include '../../email/email.nunj' %}
+			{% include '../../phones/phones.nunj' %}
+		</div>
+		<div class="footer__info">
+			<h3 class="company">ООО “Компания по доставке товаров”</h3>
+			<small class="copy">© Все права защищены</small>
+			{% include '../../development/development.nunj' %}
 		</div>
 	</div>
 </div>
