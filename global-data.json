@@ -13,6 +13,11 @@
 		{
 			"name": "Контакты",
 			"path": "contacts.html"
+		},
+		{
+			"name": "Сделать заказ",
+			"path": "make-order.html",
+			"classMakeOrder": "make-order"
 		}
 	]
 }

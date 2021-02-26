@@ -27,6 +27,8 @@
 		transform: translateY(0);
 
 		.header__inner {
+			position: relative;
+
 			padding: 6px 0;
 		}
 
@@ -49,11 +51,11 @@
 		}
 
 		.make-order {
-			order: 1;
-			padding: 7px 14px 5px;
+			position: absolute;
+			top: 6px;
+			right: 0;
 
-			font-size: 12px;
-			line-height: 16px;
+			padding: 7px 14px 5px;
 		}
 
 		.ico-make-order {
@@ -67,7 +69,7 @@
 		}
 
 		.phones {
-			margin: 0 40px 0 auto;
+			margin: 0 183px 0 auto;
 		}
 
 		.social {
