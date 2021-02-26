@@ -1,0 +1,14 @@
+{% extends "../ext/base.nunj" %}
+{% block title %}Сделать заказ{% endblock title %}
+{% from "../blocks/banner2/banner2.nunj" import banner2 %}
+
+{% block content %}
+
+	<main class="main">
+		{{ banner2({
+			img: 'banner-make-order.jpg',
+			title: 'Сделать заказ'
+		}) }}
+	</main>
+
+{% endblock content %}

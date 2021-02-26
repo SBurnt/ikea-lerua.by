@@ -1,0 +1,7 @@
+{% macro banner2(props) %}
+	<section class="banner2" style="background-image: url(assets/images/main/{{ props.img	}});">
+		<div class="container">
+			<h2 class="banner2__title">{{props.title}}</h2>
+		</div>
+	</section>
+{% endmacro %}

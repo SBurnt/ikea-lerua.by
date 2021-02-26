@@ -6,6 +6,12 @@ import './swiper';
 import './accordion';
 import './header';
 
+if (window.location.pathname === '/') {
+	console.log('main');
+} else {
+	console.log('else');
+}
+
 if (module.hot) {
 	module.hot.accept();
 }
