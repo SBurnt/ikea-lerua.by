@@ -3,7 +3,7 @@
 		<div class="two-clicks__wrap">
 			<div class="two-clicks__text">
 				<h3 class="two-clicks__text-top">пора заказывать мебель в ikea</h3>
-				<p class="two-clicks__text-bottom">Заказать любую мебель Вы можете сделав всего два клика</p>
+				<p class="two-clicks__text-bottom">Заказать любую мебель Вы можете сделав всего <span>два клика</span></p>
 			</div>
 			<a href="make-order.html" class="two-clicks__btn btn-primary">
 				<svg class="ico-make-order" width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">

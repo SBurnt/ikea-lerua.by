@@ -2,6 +2,10 @@
 	&__wrap {
 		background: url(../images/main/bg-question.png) no-repeat;
 		background-position: top right;
+
+		@include media("max", "lg") {
+			background: none;
+		}
 	}
 
 	&__title {
@@ -15,6 +19,13 @@
 
 		text-transform: uppercase;
 
+		@include media("max", "lg") {
+			margin-bottom: 15px;
+
+			font-size: 16px;
+			line-height: 20px;
+		}
+
 		span {
 			margin-right: 17px;
 
@@ -23,6 +34,11 @@
 			font-size: 35px;
 			line-height: 43px;
 			text-transform: uppercase;
+
+			@include media("max", "lg") {
+				font-size: 20px;
+				line-height: 25px;
+			}
 		}
 	}
 

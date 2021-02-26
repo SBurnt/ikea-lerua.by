@@ -2,9 +2,25 @@
 	.section__inner {
 		display: flex;
 		justify-content: space-between;
+
+		@include media("max", "md") {
+			flex-direction: column;
+		}
 	}
 
 	.slider {
 		width: calc(100% / 2 - 30px);
+
+		@include media("max", "lg") {
+			width: calc(100% / 2 - 15px);
+		}
+
+		@include media("max", "md") {
+			width: 100%;
+
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
 	}
 }

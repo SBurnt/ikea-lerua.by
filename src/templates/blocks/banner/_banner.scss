@@ -3,6 +3,15 @@
 
 	background: url(../images/main/main-banner.jpg) no-repeat;
 	background-size: cover;
+
+	@include media("max", "xl") {
+		background-position-x: center;
+	}
+
+	@include media("max", "md") {
+		height: 146px;
+	}
+
 	&__title {
 		width: 530px;
 		padding-top: 208px;
@@ -10,6 +19,13 @@
 		font-weight: 600;
 		font-size: 35px;
 		line-height: 129.18%;
+
+		@include media("max", "md") {
+			width: 128px;
+			padding-top: 46px;
+
+			font-size: 14px;
+		}
 
 		span {
 			font-weight: 800;

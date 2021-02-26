@@ -1,7 +1,9 @@
 <div class="container">
 	<div class="footer__middle">
-		{% include '../../logo/logo.nunj' %}
-		<p class="footer__desc">На нашем сайте Вы без труда можете заказать любые товары IKEA за наличный или безналичный расчет.</p>
+		<div class="footer__one-wrap">
+			{% include '../../logo/logo.nunj' %}
+			<p class="footer__desc">На нашем сайте Вы без труда можете заказать любые товары IKEA за наличный или безналичный расчет.</p>
+		</div>
 		<div class="footer__nav">
 			<ul class="nav__items">
 				{% for item in navItems %}

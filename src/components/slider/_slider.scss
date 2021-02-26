@@ -5,6 +5,10 @@
 
 	&__img-wrap {
 		height: 520px;
+
+		@include media("max", "lg") {
+			height: 265px;
+		}
 	}
 
 	&__img {
@@ -27,6 +31,11 @@
 	&__img-logo {
 		width: 109px;
 		height: 61px;
+
+		@include media("max", "lg") {
+			width: 62px;
+			height: 36px;
+		}
 	}
 
 	&__desc-wrap {
@@ -35,6 +44,11 @@
 		border-radius: 0 0 1px 1px;
 
 		background-color: $bg-gray;
+
+		@include media("max", "lg") {
+			min-height: auto;
+			padding: 18px 15px;
+		}
 	}
 
 	&__desc {
@@ -42,6 +56,11 @@
 		font-weight: bold;
 		font-size: 16px;
 		line-height: 22px;
+
+		@include media("max", "lg") {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 
 	&__btn {
@@ -49,6 +68,22 @@
 		top: 451px;
 		right: 30px;
 		z-index: 1;
+
+		@include media("max", "lg") {
+			top: 212px;
+			right: 15px;
+
+			padding: 8px 18px 8px;
+
+			font-size: 10px;
+			line-height: 14px;
+
+			.ico-make-order {
+				width: 15px;
+				height: 11px;
+				margin-right: 8px;
+			}
+		}
 	}
 
 	&__arrows-wrap {
@@ -58,10 +93,18 @@
 		z-index: 1;
 
 		display: flex;
+
+		@include media("max", "lg") {
+			top: 209px;
+			left: 15px;
+		}
 	}
 
 	&__arrows-prev {
 		margin-right: 20px;
+		@include media("max", "lg") {
+			margin-right: 13px;
+		}
 	}
 
 	&__arrows-next,
@@ -71,6 +114,13 @@
 		&:hover {
 			svg rect {
 				fill: #eaeaea;
+			}
+		}
+
+		svg {
+			@include media("max", "lg") {
+				width: 35px;
+				height: 35px;
 			}
 		}
 	}

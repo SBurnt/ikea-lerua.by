@@ -1,6 +1,18 @@
 .commission {
+	@include media("max", "md") {
+		margin: 15px 0;
+
+		background: url(../images/main/bg-commission.jpg) no-repeat;
+		background-position-x: right;
+		background-size: cover;
+	}
+
 	.section__inner {
 		border-top: 1px solid #dedede;
+
+		@include media("max", "md") {
+			border-top: 0;
+		}
 	}
 
 	&__wrap {
@@ -10,6 +22,12 @@
 
 		background: url(../images/main/bg-commission.jpg) no-repeat;
 		background-size: cover;
+
+		@include media("max", "md") {
+			min-height: auto;
+
+			background: none;
+		}
 	}
 
 	&__content {
@@ -19,12 +37,20 @@
 
 		width: 100%;
 		max-width: 484px;
-		// margin: 21px 57px 24px auto;
 		padding: 24px 38px;
 		border-radius: 10px;
 
 		background: #ffffff;
 		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+
+		@include media("max", "md") {
+			position: static;
+
+			display: flex;
+			flex-direction: column;
+
+			padding: 24px 15px;
+		}
 	}
 
 	&__title {
@@ -38,10 +64,23 @@
 		line-height: 25px;
 
 		text-transform: uppercase;
+
+		@include media("max", "md") {
+			margin-right: auto;
+			margin-left: auto;
+
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 
 	&__btn {
 		margin-top: 23px;
+
+		@include media("max", "md") {
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 
 	.table {
@@ -52,17 +91,31 @@
 
 			&:first-child {
 				margin-bottom: 13px;
+
+				@include media("max", "md") {
+					margin-bottom: 8px;
+				}
 			}
 		}
 		&__row-first {
 			font-weight: 600;
 			font-size: 16px;
 			line-height: 22px;
+
+			@include media("max", "md") {
+				font-size: 12px;
+				line-height: 16px;
+			}
 		}
 		&__title {
 			font-size: 14px;
 			line-height: 19px;
 			white-space: nowrap;
+
+			@include media("max", "md") {
+				font-size: 12px;
+				line-height: 16px;
+			}
 
 			span {
 				font-weight: 700;
@@ -79,6 +132,13 @@
 			font-weight: 700;
 			font-size: 14px;
 			line-height: 19px;
+
+			@include media("max", "md") {
+				min-width: 62px;
+
+				font-size: 12px;
+				line-height: 16px;
+			}
 		}
 	}
 }
