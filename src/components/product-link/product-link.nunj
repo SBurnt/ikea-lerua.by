@@ -1,0 +1,9 @@
+<div class="product-link">
+	<form class="product-link__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+		<div class="product-link__wrap">
+			<label class="product-link__label" for="product-link">Ссылка на товар</label>
+			<input class="product-link__input" id="product-link" type="url" name="product-link" placeholder="https://www.ikea.com/ru/ru/p/skoghall-skughal-kryuchok-samokleyashchiysya-hromirovannyy-00379247/">
+		</div>
+		<button class="product-link__btn-send btn-primary">добавить</button>
+	</form>
+</div>
