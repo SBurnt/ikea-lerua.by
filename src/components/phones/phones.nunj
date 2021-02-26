@@ -3,30 +3,38 @@
 		+ 375 (00) <span>000-00-00</span></a>
 	<ul class="phones__dropdown-list">
 		<li class="phones__dropdown-item">
-			<img class="phones__img lazyload" data-src="assets/images/ico/ico-A1.png" loading="lazy" alt="ico A1">
+			<div class="phones__img-wrap">
+				<img class="phones__img lazyload" data-src="assets/images/ico/ico-A1.png" loading="lazy" alt="ico A1">
+			</div>
 			<div class="phones__wrap">
-				<a class="phones__dropdown-link" href="tel:+375001111111">+ 375 (00) 111-11-11 <span class="phones__operator">A1</span></a>
+				<a class="phones__dropdown-link" href="tel:+375001111111">+ 375 (00) 111-11-11 <span class="phones__operator">(A1)</span></a>
 				<span class="phones__description">Единый сервисный номер</span>
 			</div>
 		</li>
 		<li class="phones__dropdown-item">
-			<img class="phones__img lazyload" data-src="assets/images/ico/ico-MTS.png" loading="lazy" alt="ico MTC">
+			<div class="phones__img-wrap">
+				<img class="phones__img lazyload" data-src="assets/images/ico/ico-MTS.png" loading="lazy" alt="ico MTC">
+			</div>
 			<div class="phones__wrap">
-				<a class="phones__dropdown-link" href="tel:+375002222222">+ 375 (00) 222-22-22 <span class="phones__operator">МТС</span></a>
+				<a class="phones__dropdown-link" href="tel:+375002222222">+ 375 (00) 222-22-22 <span class="phones__operator">(МТС)</span></a>
 				<span class="phones__description">Отдел продаж</span>
 			</div>
 		</li>
 		<li class="phones__dropdown-item">
-			<img class="phones__img lazyload" data-src="assets/images/ico/ico-Life.png" loading="lazy" alt="ico Life">
+			<div class="phones__img-wrap">
+				<img class="phones__img lazyload" data-src="assets/images/ico/ico-Life.png" loading="lazy" alt="ico Life">
+			</div>
 			<div class="phones__wrap">
-				<a class="phones__dropdown-link" href="tel:+375003333333">+ 375 (00) 333-33-33 <span class="phones__operator">МТС</span></a>
+				<a class="phones__dropdown-link" href="tel:+375003333333">+ 375 (00) 333-33-33 <span class="phones__operator">(Life)</span></a>
 				<span class="phones__description">Тех отдел</span>
 			</div>
 		</li>
 		<li class="phones__dropdown-item">
-			<img class="phones__img lazyload" data-src="assets/images/ico/ico-A1.png" loading="lazy" alt="ico A1">
+			<div class="phones__img-wrap">
+				<img class="phones__img lazyload" data-src="assets/images/ico/ico-A1.png" loading="lazy" alt="ico A1">
+			</div>
 			<div class="phones__wrap">
-				<a class="phones__dropdown-link" href="tel:+375004444444">+ 375 (00) 444-44-44 <span class="phones__operator">A1</span></a>
+				<a class="phones__dropdown-link" href="tel:+375004444444">+ 375 (00) 444-44-44 <span class="phones__operator">(A1)</span></a>
 				<span class="phones__description">Единый сервисный номер</span>
 			</div>
 		</li>
