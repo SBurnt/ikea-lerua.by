@@ -9,6 +9,7 @@
 			img: 'banner-make-order.jpg',
 			title: 'Сделать заказ'
 		}) }}
+			{% include '../../components/options/options.nunj' %}
 	</main>
 
 {% endblock content %}
