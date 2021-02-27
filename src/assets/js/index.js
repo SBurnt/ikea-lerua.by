@@ -5,6 +5,7 @@ import './modals';
 import './swiper';
 import './accordion';
 import './header';
+import './stepper';
 
 if (window.location.pathname === '/') {
 	console.log('main');
