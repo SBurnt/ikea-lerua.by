@@ -70,3 +70,11 @@ $sizes: (
 	// 	max-width: 1200px;
 	// }
 }
+
+.p-50-15 {
+	padding: 0 50px;
+
+	@include media("max", "md") {
+		padding: 0 15px;
+	}
+}

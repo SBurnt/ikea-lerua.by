@@ -1,11 +1,13 @@
 <div class="options">
 	<div class="container">
-		<div class="options__title">2 варианта оформления заказа:</div>
-		<div class="options__choise">
-			<span class="numb">Вариант 1:</span> скопируйте ссылку товара с официального сайта ikea, вставьте в поле, нажмите “Добавить”
+		<div class="options__wrap p-50-15">
+			<div class="options__title">2 варианта оформления заказа:</div>
+			<div class="options__choise">
+				<span class="numb">Вариант 1:</span> скопируйте ссылку товара с официального сайта ikea, вставьте в поле, нажмите “Добавить”
 		</div>
-		<div class="options__choise">
-			<span class="numb">Вариант 2:</span>  отправьте нам сформированный список через форму <span class="registration">“Оформление заказа”</span>
+			<div class="options__choise">
+				<span class="numb">Вариант 2:</span>  отправьте нам сформированный список через форму <span class="registration">“Оформление заказа”</span>
+			</div>
 		</div>
 	</div>
 </div>

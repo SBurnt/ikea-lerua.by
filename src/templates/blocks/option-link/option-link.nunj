@@ -1,5 +1,8 @@
 <div class="option-link">
 	<div class="container">
-		{% include '../../../components/product-link/product-link.nunj' %}
+		<div class="option-link__wrap p-50-15">
+			{% include '../../../components/product-link/product-link.nunj' %}
+			{% include '../../../components/product/product.nunj' %}
+		</div>
 	</div>
 </div>
