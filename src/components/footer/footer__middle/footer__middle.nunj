@@ -7,9 +7,13 @@
 		<div class="footer__nav">
 			<ul class="nav__items">
 				{% for item in navItems %}
-					<li class="nav__item{% if item.classMakeOrder == "make-order" %} make-order{% endif %}">
-						<a href="{{ item.path }}" class="nav__link">{{ item.name }}</a>
-					</li>
+					{% if item.name == "Сделать заказ" %}
+						{# не выводим "Сделать заказ" #}
+					{% else %}
+						<li class="nav__item">
+							<a href="{{ item.path }}" class="nav__link" {% if item.target%}target="{{ item.target }}"{% endif %}>{{ item.name }}</a>
+						</li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 		</div>

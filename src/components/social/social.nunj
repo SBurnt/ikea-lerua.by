@@ -1,7 +1,7 @@
 <div class="social">
 	<ul class="social__list">
 		<li class="social__item">
-			<a href="https://t.me/ikea-lerua.by" class="social__link">
+			<a href="https://t.me/ikea-lerua.by" class="social__link" target="_blank">
 				<svg class="social__ico-telegram" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="white" width="31" height="31" rx="15.5" fill="white"/>
 					<rect class="color" x="1" y="1" width="28.9855" height="28.9855" rx="14.4928" fill="#06CAFF"/>
@@ -10,7 +10,7 @@
 			</a>
 		</li>
 		<li class="social__item">
-			<a href="https://www.instagram.com/" class="social__link">
+			<a href="https://www.instagram.com/" class="social__link" target="_blank">
 				<svg class="social__ico-instagram" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="white" width="31" height="31" rx="15.5" fill="white"/>
 					<rect class="color" x="0.985352" y="1" width="28.9855" height="28.9855" rx="14.4928" fill="#F82900"/>
@@ -19,7 +19,7 @@
 			</a>
 		</li>
 		<li class="social__item">
-			<a href="viber://chat?number=%2B3750000000" class="social__link">
+			<a href="viber://chat?number=%2B3750000000" class="social__link" target="_blank">
 				<svg class="social__ico-viber" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect class="white" width="31" height="31" rx="15.5" fill="white"/>
 					<rect class="color" x="0.970703" y="1" width="28.9855" height="28.9855" rx="14.4928" fill="#933FE8"/>

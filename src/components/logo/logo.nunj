@@ -1,5 +1,5 @@
 <div class="logo__wrap">
-	<a class="logo__link" href="index.html">
+	<a class="logo__link" href="/">
 		<img class="logo__img lazyload" data-src="assets/images/logo.png" loading="lazy" alt="логотип">
 	</a>
 </div>

@@ -93,6 +93,8 @@
 	.ico-arrow-accordion {
 		min-width: 30px;
 		min-height: 30px;
+
+		pointer-events: none;
 	}
 
 	&__answer {
