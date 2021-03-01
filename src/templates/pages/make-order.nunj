@@ -11,6 +11,7 @@
 		}) }}
 		{% include '../../components/options/options.nunj' %}
 		{% include '../blocks/option-link/option-link.nunj' %}
+		{% include '../blocks/option-form/option-form.nunj' %}
 	</main>
 
 {% endblock content %}

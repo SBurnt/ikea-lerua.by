@@ -1,0 +1,7 @@
+<div class="option-form">
+	<div class="container">
+		<div class="section__inner">
+			{% include "../../../components/form__feedback/form__feedback.nunj" %}
+		</div>
+	</div>
+</div>

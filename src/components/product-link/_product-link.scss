@@ -1,6 +1,4 @@
 .product-link {
-	margin-bottom: 50px;
-
 	@include media("max", "sm") {
 		margin-bottom: 40px;
 	}
