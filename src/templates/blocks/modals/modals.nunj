@@ -1,3 +1,26 @@
-<div class="modals fix-block">
-	{# {% include "../../components/modal-callback/modal-callback.nunj" %} #}
+<!-- 1. добавить класс ".modal-overlay--visible" к классу ".modal-overlay" -->
+<!-- 2. добавить класс ".modal--visible" к классу ".modal--1 или .modal--2" -->
+<div class="modals">
+	<div class="modal-overlay">
+		<div class="modal modal--1">
+			<button class="modal__btn-close">
+				<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L11 12M11 1L1 12" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__content">
+				<p class="modal__text">Спасибо, Вы сделали заказ.<br> Скоро с Вами свяжется наш менеджер</p>
+			</div>
+		</div>
+		<div class="modal modal--2">
+			<button class="modal__btn-close">
+				<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L11 12M11 1L1 12" stroke="#B0B0B0" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</button>
+			<div class="modal__content">
+				<p class="modal__text">Спасибо.<br> Скоро с Вами свяжется наш менеджер</p>
+			</div>
+		</div>
+	</div>
 </div>

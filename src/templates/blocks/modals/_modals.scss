@@ -1,125 +1,86 @@
-.modals {
+.modal-overlay {
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 3;
 
-	overflow-x: hidden;
-	overflow-y: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
 
-	text-align: center;
-
-	background-color: $bg-modals-overlay;
+	background-color: rgba(0, 0, 0, 0.5);
 	visibility: hidden;
-	cursor: pointer;
 	opacity: 0;
 
-	transition: opacity var(--transition-time), visibility var(--transition-time);
+	transition: all 0.3s ease-in-out;
 
-	--transition-time: 0.3s;
-
-	&::before {
-		content: '';
-
-		display: inline-block;
-		height: 100%;
-
-		vertical-align: middle;
-	}
-
-	&.is-open {
+	&.modal-overlay--visible {
 		visibility: visible;
 		opacity: 1;
 
-		transition: opacity var(--transition-time), visibility var(--transition-time);
+		transition: all 0.3s ease-in-out;
 	}
-
-	// *:focus {
-	// 	outline: 3px red solid;
-	// }
 }
 
 .modal {
-	&__container {
-		position: relative;
-
-		display: none;
-		margin: 50px auto;
-		padding: 50px 60px;
-
-		vertical-align: middle;
-		text-align: left;
-
-		// background-color: $bg-dark;
-		border-radius: 3px;
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-		cursor: default;
-
-		@include media('max', 'lg') {
-			width: 93% !important;
-		}
-
-		@include media('max', 'md') {
-			padding: 40px 20px;
-		}
-
-		&.modal__open {
-			display: inline-block;
-		}
-
-		&.fade {
-			opacity: 0;
-
-			transition: opacity var(--transition-time);
-
-			&.animate-open {
-				opacity: 1;
-
-				transition: opacity var(--transition-time);
-			}
-		}
-
-		&.fadeInUp {
-			transform: translateY(-100px);
-			opacity: 0;
-
-			transition: opacity var(--transition-time), transform var(--transition-time);
-
-			&.animate-open {
-				transform: translateY(0);
-				opacity: 1;
-
-				transition: opacity var(--transition-time), transform var(--transition-time);
-			}
-		}
-	}
-
-	&__close {
-		position: absolute;
-		top: 30px;
-		right: 30px;
-
-		@include media('max', 'md') {
-			top: 15px;
-			right: 15px;
-		}
-
-		svg {
-			width: 16px;
-			height: 16px;
-		}
-	}
-}
-
-.disable-scroll {
 	position: relative;
-	position: fixed;
-	top: 0;
-	left: 0;
 
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 730px;
+	margin: 0 15px;
+	padding: 60px;
+	border-top: 5px solid #f6a623;
+	border-radius: 5px;
+
+	background-color: #fff;
+	transform: translateY(-100px);
+	opacity: 0;
+
+	transition: opacity 0.5s, transform 0.5s;
+
+	@include media("max", "md") {
+		padding: 55px 15px;
+	}
+
+	&.modal--visible {
+		display: flex;
+
+		transform: translateY(0px);
+		opacity: 1;
+
+		transition: opacity 0.5s, transform 0.5s;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+	}
+
+	&__btn-close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+
+		border: 0;
+
+		cursor: pointer;
+
+		@include media("max", "md") {
+			top: 20px;
+			right: 20px;
+		}
+
+		&:hover {
+			svg path {
+				stroke: #333333;
+			}
+		}
+	}
 }

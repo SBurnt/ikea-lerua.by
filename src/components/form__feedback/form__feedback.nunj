@@ -3,10 +3,11 @@
 		<span class="form__title">{{props.title}}</span>
 		<div class="form__content">
 			<div class="form__left">
-				<label class="form__label">
+				<label class="form__label has-error">
 					<input class="form__input" type="text" name="name" onkeyup="this.setAttribute('value', this.value);" value>
 					<span class="form__input-placeholder">Ваше имя <span>*</span></span>
 					<img class="form__input-img" src="assets/images/ico/ico-form-name.svg" alt="иконка контакта">
+					<span class="form__input-error">Обязательное поле</span>
 				</label>
 				<label class="form__label">
 					<input class="form__input" type="tel" inputmode="tel" name="tel" onkeyup="this.setAttribute('value', this.value);" value>
@@ -44,4 +45,6 @@
 		</div>
 		<button class="btn-primary form__btn-send">{{props.btnSend}}</button>
 	</form>
+
+	{% include '../../templates/blocks/modals/modals.nunj' %}
 {% endmacro %}
