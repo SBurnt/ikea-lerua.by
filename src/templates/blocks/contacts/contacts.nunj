@@ -1,0 +1,59 @@
+<div class="contacts">
+	<div class="container">
+		<div class="contacts__inner p-50-15">
+			<ul class="contacts__list">
+				<li class="contacts__item">
+					<span class="contacts__name">Почта</span>
+					<ul class="contacts__sublist">
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="mailto:info@pochtadostavka.by">
+								<img class="contacts__img-ico lazyload" data-src="assets/images/ico/ico-email-header.svg" loading="lazy" alt="иконка телефона">
+								info@pochtadostavka.by
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="contacts__item">
+					<span class="contacts__name">Телефон</span>
+					<ul class="contacts__sublist">
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="+375290000000">
+								<img class="contacts__img-ico lazyload" data-src="assets/images/ico/ico-phone-header.svg" loading="lazy" alt="иконка телефона">
+								+375 (29) <span>000-00-00</span>
+							</a>
+						</li>
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="+375290000000">+375 (29) <span>000-00-00</span></a>
+						</li>
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="+375290000000">+375 (29) <span>000-00-00</span></a>
+						</li>
+					</ul>
+				</li>
+				<li class="contacts__item">
+					<span class="contacts__name">Мессенджеры</span>
+					<ul class="contacts__sublist">
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="https://t.me/ikea-lerua.by" target="_blank">
+								<img class="contacts__img-ico lazyload" data-src="assets/images/ico/ico-contacts-telegram.svg" loading="lazy" alt="иконка telegram">
+								telegram_link
+							</a>
+						</li>
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="https://www.instagram.com/" target="_blank">
+								<img class="contacts__img-ico lazyload" data-src="assets/images/ico/ico-contacts-instagram.svg" loading="lazy" alt="иконка instagram">
+								instagram_link
+							</a>
+						</li>
+						<li class="contacts__subitem">
+							<a class="contacts__link" href="viber://chat?number=%2B3750000000" target="_blank">
+								<img class="contacts__img-ico lazyload" data-src="assets/images/ico/ico-contacts-viber.svg" loading="lazy" alt="иконка viber">
+								viber_link
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

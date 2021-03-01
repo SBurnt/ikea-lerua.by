@@ -1,7 +1,14 @@
+{% from "../../../components/form__feedback/form__feedback.nunj" import formFeedback %}
+
 <div class="option-form">
 	<div class="container">
 		<div class="section__inner">
-			{% include "../../../components/form__feedback/form__feedback.nunj" %}
+			{{ formFeedback({
+				title: 'Оформление заказа',
+				btnSend: 'оформить заказ',
+				file: true,
+				address: true
+			}) }}
 		</div>
 	</div>
 </div>

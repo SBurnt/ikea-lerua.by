@@ -1,0 +1,18 @@
+{% extends "../ext/base.nunj" %}
+{% block title %}Контакты{% endblock title %}
+{% from "../blocks/banner2/banner2.nunj" import banner2 %}
+{% from "../../components/form__feedback/form__feedback.nunj" import formFeedback %}
+
+{% block content %}
+
+	<main class="main">
+		{{ banner2({
+			img: 'banner-contacts.jpg',
+			title: 'Контакты'
+		}) }}
+		{% include '../blocks/contacts/contacts.nunj' %}
+		{% include '../blocks/delivery/delivery.nunj' %}
+		{% include '../blocks/feedback/feedback.nunj' %}
+	</main>
+
+{% endblock content %}

@@ -1,41 +1,47 @@
-<form class="form__feedback" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-	<span class="form__title">Оформление заказа</span>
-	<div class="form__content">
-		<div class="form__left">
-			<label class="form__label">
-				<input class="form__input" type="text" name="name" onkeyup="this.setAttribute('value', this.value);" value>
-				<span class="form__input-placeholder">Ваше имя <span>*</span></span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-name.svg" alt="иконка контакта">
-			</label>
-			<label class="form__label">
-				<input class="form__input" type="tel" inputmode="tel" name="tel" onkeyup="this.setAttribute('value', this.value);" value>
-				<span class="form__input-placeholder">Телефон <span>*</span></span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-phone.svg" alt="иконка телефона">
-			</label>
-			<label class="form__label">
-				<input class="form__input" type="email" name="email" onkeyup="this.setAttribute('value', this.value);" value>
-				<span class="form__input-placeholder">Ваш email <span>*</span></span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-email.svg" alt="иконка email">
-			</label>
-			<label class="form__label">
-				<input class="form__input" type="text" name="address" onkeyup="this.setAttribute('value', this.value);" value>
-				<span class="form__input-placeholder">Адрес <span>*</span></span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-address.svg" alt="иконка адресс">
-			</label>
+{% macro formFeedback(props) %}
+	<form class="form__feedback" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+		<span class="form__title">{{props.title}}</span>
+		<div class="form__content">
+			<div class="form__left">
+				<label class="form__label">
+					<input class="form__input" type="text" name="name" onkeyup="this.setAttribute('value', this.value);" value>
+					<span class="form__input-placeholder">Ваше имя <span>*</span></span>
+					<img class="form__input-img" src="assets/images/ico/ico-form-name.svg" alt="иконка контакта">
+				</label>
+				<label class="form__label">
+					<input class="form__input" type="tel" inputmode="tel" name="tel" onkeyup="this.setAttribute('value', this.value);" value>
+					<span class="form__input-placeholder">Телефон <span>*</span></span>
+					<img class="form__input-img" src="assets/images/ico/ico-form-phone.svg" alt="иконка телефона">
+				</label>
+				<label class="form__label">
+					<input class="form__input" type="email" name="email" onkeyup="this.setAttribute('value', this.value);" value>
+					<span class="form__input-placeholder">Ваш email <span>*</span></span>
+					<img class="form__input-img" src="assets/images/ico/ico-form-email.svg" alt="иконка email">
+				</label>
+				{% if props.address %}
+					<label class="form__label">
+						<input class="form__input" type="text" name="address" onkeyup="this.setAttribute('value', this.value);" value>
+						<span class="form__input-placeholder">Адрес <span>*</span></span>
+						<img class="form__input-img" src="assets/images/ico/ico-form-address.svg" alt="иконка адресс">
+					</label>
+				{% endif %}
+			</div>
+			<div class="form__right">
+				{% if props.file %}
+					<label class="form__label file-label">
+						<input class="form__input-file" type="file" name="file[]" multiple>
+						<span class="form__input-file-btn">Прикрепить файл</span>
+						<span class="form__input-file-text">В случае готового списка</span>
+						<img class="form__input-img" src="assets/images/ico/ico-form-file.svg" alt="иконка файл">
+					</label>
+				{% endif %}
+				<label class="form__label textarea">
+					<textarea class="form__input textarea" name="message" rows="3" onkeyup="this.setAttribute('value', this.value);" value></textarea>
+					<span class="form__input-placeholder">Комментарий</span>
+					<img class="form__input-img" src="assets/images/ico/ico-form-message.svg" alt="иконка сообщение">
+				</label>
+			</div>
 		</div>
-		<div class="form__right">
-			<label class="form__label file-label">
-				<input class="form__input-file" type="file" name="file[]" multiple>
-				<span class="form__input-file-btn">Прикрепить файл</span>
-				<span class="form__input-file-text">В случае готового списка</span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-file.svg" alt="иконка файл">
-			</label>
-			<label class="form__label textarea">
-				<textarea class="form__input textarea" name="message" rows="3" onkeyup="this.setAttribute('value', this.value);" value></textarea>
-				<span class="form__input-placeholder">Комментарий</span>
-				<img class="form__input-img" src="assets/images/ico/ico-form-message.svg" alt="иконка сообщение">
-			</label>
-		</div>
-	</div>
-	<button class="btn-primary form__btn-send">оформить заказ</button>
-</form>
+		<button class="btn-primary form__btn-send">{{props.btnSend}}</button>
+	</form>
+{% endmacro %}
