@@ -8,9 +8,7 @@ import './header';
 import './stepper';
 
 if (window.location.pathname === '/') {
-	console.log('main');
-} else {
-	console.log('else');
+	document.querySelector('.header').style.backgroundColor = 'transparent';
 }
 
 if (module.hot) {

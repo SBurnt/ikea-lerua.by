@@ -1,6 +1,8 @@
 @import "header-nav/header-nav";
 
 .header {
+	position: sticky;
+
 	background-color: $bg-header;
 
 	&__inner {
@@ -22,7 +24,7 @@
 		top: 0;
 		z-index: 2;
 
-		background: $bg-gray;
+		background: $bg-gray !important;
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 		transform: translateY(0);
 
