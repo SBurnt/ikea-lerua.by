@@ -1,1 +1,1 @@
-# ikea-lerua.by
+# https://ikea-lerua.netlify.app/
